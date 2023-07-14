@@ -4,5 +4,8 @@
 @import 'base/reset'; //리셋, 노멀라이즈 css
 @import 'base/typography'; //폰트정의
 
+@import 'component/button'; //버튼정의
+
+@import 'layout/align'; //푸터
 @import 'layout/footer'; //푸터
 @import 'layout/header'; //헤더

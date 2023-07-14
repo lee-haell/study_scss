@@ -1,0 +1,19 @@
+/* 버튼 */
+.btn {
+    &-prev {
+        width: 40px;
+        height: 40px;
+        background: url('/images/icon_back_24.svg') no-repeat center; //절대경로
+    }
+    &-menu {
+        width: 40px;
+        height: 40px;
+        background: url('/images/icon_menu_24.svg') no-repeat center;
+    }
+    &-cart {
+        width: 40px;
+        height: 40px;
+        background: url('/images/icon_cart_24.svg') no-repeat center;
+    }
+}
+
