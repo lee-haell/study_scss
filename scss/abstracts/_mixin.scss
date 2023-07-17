@@ -1,3 +1,4 @@
+/* position */
 @mixin position($x, $xValue, $y, $yValue){
     position: absolute;
     #{$x}:$xValue; //x축: x축값; #{} > 보간 사용
@@ -12,3 +13,29 @@
     }
 }
 
+/* IR */
+@mixin blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    clip: rect(0, 0, 0, 0);
+}
+
+/* 말줄임 */
+@mixin ellipsis($lines: 1) {
+    @if ($lines == 1) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    } @else {
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: $lines;
+        -webkit-box-orient: vertical;
+    }
+}

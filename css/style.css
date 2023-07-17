@@ -1,5 +1,7 @@
 @charset "UTF-8";
-/* 색상 변수 */
+/* 색상 변수 */ /* position */
+/* IR */
+/* 말줄임 */
 /* Reset */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 html, body, h1, h2, h3, h4, h5, h6, div, p, blockquote, pre, code, address, ul, ol, li, nav, section, article, header, footer, main, aside, dl, dt, dd, table, thead, tbody, tfoot, label, caption, th, td, form, fieldset, legend, hr, input, button, textarea, object, figure, figcaption {
@@ -132,7 +134,6 @@ input[type=date]:valid::before {
 /* 정렬 */
 .align {
   display: flex;
-  width: 100%;
   /* 다중 클래스 */
 }
 .align.left {

@@ -1,7 +1,6 @@
 /* 정렬 */
 .align {
     display: flex;
-    width: 100%;
     /* 다중 클래스 */
     &.left {
         justify-content: flex-start;
@@ -13,4 +12,3 @@
         justify-content: space-between;
     }
 }
-
