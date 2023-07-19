@@ -1,0 +1,10 @@
+/* abstracts / _function.scss */
+//px to rem
+//모바일 or 반응형은 무조건 rem 사용(모든 px은 rem화 시킨다.)
+@function rem($px, $base : 10){ //$px : 변화하는 매개변수(실측값), $base : 기준값(10px)
+    //실측값(디자인파일에서 확인한 값) / 기준폰트값(html 요소에 지정한 폰트크기)
+    //40px / 10px = 4rem(rem값으로 나와야 함, 아래의 함수 이용)
+    //@return (숫자값 / 숫자값) * 1rem = ??rem;
+    $sum : ($px / $base) * 1rem; //$sum : 변수, ()값을 구한 뒤 rem으로 변환해야 하기 때문에 1rem을 곱한다.
+    @return $sum;
+}

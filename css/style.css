@@ -1,5 +1,8 @@
 @charset "UTF-8";
-/* 색상 변수 */ /* position */
+/* abstracts / _variables.scss */
+/* 색상 변수 */
+/* abstracts / _function.scss */ /* abstracts / _mixin.scss */
+/* position */
 /* IR */
 /* 말줄임 */
 /* Reset */
@@ -106,31 +109,60 @@ input[type=date]:valid::before {
   display: none;
 }
 
+/* base / _typography.scss */
 /* 폰트 */
+html, body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 폰트 : rem */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1rem;
+}
+
 .title {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 29px;
+  font-size: 1.8rem;
+  line-height: 2.9rem;
   color: #060606;
 }
 
-/* 버튼 */
+/* component / _button.scss */
 .btn-prev {
-  width: 40px;
-  height: 40px;
-  background: url("/images/icon_back_24.svg") no-repeat center;
+  width: 4rem;
+  height: 4rem;
+  background: url("/images/icon_back_24.svg") no-repeat center/2.4rem auto;
 }
 .btn-menu {
-  width: 40px;
-  height: 40px;
-  background: url("/images/icon_menu_24.svg") no-repeat center;
+  width: 4rem;
+  height: 4rem;
+  background: url("/images/icon_menu_24.svg") no-repeat center/2.4rem auto;
 }
 .btn-cart {
-  width: 40px;
-  height: 40px;
-  background: url("/images/icon_cart_24.svg") no-repeat center;
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  background: url("/images/icon_cart_24.svg") no-repeat center/2.4rem auto;
+}
+.btn-cart span {
+  position: absolute;
+  right: 0.06px;
+  top: 0.25px;
+  background-color: #FF3D45;
+  color: #fff;
+  padding: 0 0.6rem;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  border-radius: 1.6rem;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
+/* layout / _align.scss */
 /* 정렬 */
 .align {
   display: flex;
@@ -146,14 +178,11 @@ input[type=date]:valid::before {
   justify-content: space-between;
 }
 
-html, body {
-  font-family: "Noto Sans KR", sans-serif;
-}
-
+/* layout / __footer.scss */ /* layout / _header.scss */
 .header-wrap {
   display: flex;
   align-items: center;
-  height: 48px;
+  height: 4.8rem;
   position: relative;
 }
 .header-wrap .title {
