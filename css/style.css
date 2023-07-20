@@ -164,48 +164,66 @@ body {
 /* component / _gnb.scss */
 .gnb {
   display: flex;
+  background-color: #fff;
+  box-shadow: 0 -0.4rem 0.4rem rgba(6, 6, 6, 0.04);
 }
 .gnb li {
   position: relative;
   flex: 1;
   text-align: center;
-  height: 5.7rem;
-}
-.gnb li::before {
-  content: "";
-  display: block;
-  width: 2.4rem;
-  height: 2.4rem;
-  position: absolute;
-  left: 50%;
-  top: 0.8rem;
-  transform: translateX(-50%);
-}
-.gnb li:nth-child(1)::before {
-  background: url("/images/icon_home_24_off.svg") no-repeat center;
-}
-.gnb li:nth-child(2)::before {
-  background: url("/images/icon_search_24_off.svg") no-repeat center;
-}
-.gnb li:nth-child(3)::before {
-  background: url("/images/icon_qr_24_off.svg") no-repeat center;
-}
-.gnb li:nth-child(4)::before {
-  background: url("/images/icon_profile_24_off.svg") no-repeat center;
-}
-.gnb li:nth-child(5)::before {
-  background: url("/images/icon_profile_24_off.svg") no-repeat center;
-}
-.gnb li img {
-  padding-top: 0.8rem;
 }
 .gnb li a {
   display: block;
-  width: 100%;
-  padding-top: 3.5rem;
+  padding: 3.5rem 0 0.6rem;
   font-size: 1.1rem;
+  line-height: 1.6rem;
   font-weight: 500;
   color: #838A93;
+}
+.gnb .ico1 {
+  background: url("/images/icon_gnb_off1.svg") no-repeat center 0.8rem;
+}
+.gnb .ico1:hover {
+  background: url("/images/icon_gnb_on1.svg") no-repeat center 0.8rem;
+}
+.gnb .ico1:hover a {
+  color: #000;
+}
+.gnb .ico2 {
+  background: url("/images/icon_gnb_off2.svg") no-repeat center 0.8rem;
+}
+.gnb .ico2:hover {
+  background: url("/images/icon_gnb_on2.svg") no-repeat center 0.8rem;
+}
+.gnb .ico2:hover a {
+  color: #000;
+}
+.gnb .ico3 {
+  background: url("/images/icon_gnb_off3.svg") no-repeat center 0.8rem;
+}
+.gnb .ico3:hover {
+  background: url("/images/icon_gnb_on3.svg") no-repeat center 0.8rem;
+}
+.gnb .ico3:hover a {
+  color: #000;
+}
+.gnb .ico4 {
+  background: url("/images/icon_gnb_off4.svg") no-repeat center 0.8rem;
+}
+.gnb .ico4:hover {
+  background: url("/images/icon_gnb_on4.svg") no-repeat center 0.8rem;
+}
+.gnb .ico4:hover a {
+  color: #000;
+}
+.gnb .ico5 {
+  background: url("/images/icon_gnb_off5.svg") no-repeat center 0.8rem;
+}
+.gnb .ico5:hover {
+  background: url("/images/icon_gnb_on5.svg") no-repeat center 0.8rem;
+}
+.gnb .ico5:hover a {
+  color: #000;
 }
 
 /* layout / _align.scss */
