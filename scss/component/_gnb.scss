@@ -1,0 +1,33 @@
+/* component / _gnb.scss */
+.gnb {
+    display: flex;
+    li {
+        position: relative;
+        flex: 1;
+        text-align: center;
+        height: rem(57);
+        &::before {
+            content: '';
+            display: block;
+            width: rem(24);
+            height: rem(24);
+            @include position(left, 50%, top, rem(8));
+            @for $i from 1 to 6 {
+                .ico#{$i} {
+                    background: url('/images/icon_gnb_off#{$i}.svg') no-repeat center;
+                }
+            }
+        }
+        img {
+            padding-top: rem(8);
+        }
+        a {
+            display: block;
+            width: 100%;
+            padding-top: rem(35);
+            font-size: rem(11);
+            font-weight: 500;
+            color: $gray83;
+        }
+    }
+}

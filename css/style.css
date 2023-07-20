@@ -4,7 +4,6 @@
 /* abstracts / _function.scss */ /* abstracts / _mixin.scss */
 /* position */
 /* IR */
-/* 말줄임 */
 /* Reset */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 html, body, h1, h2, h3, h4, h5, h6, div, p, blockquote, pre, code, address, ul, ol, li, nav, section, article, header, footer, main, aside, dl, dt, dd, table, thead, tbody, tfoot, label, caption, th, td, form, fieldset, legend, hr, input, button, textarea, object, figure, figcaption {
@@ -160,6 +159,53 @@ body {
   border-radius: 1.6rem;
   font-size: 1.1rem;
   font-weight: 500;
+}
+
+/* component / _gnb.scss */
+.gnb {
+  display: flex;
+}
+.gnb li {
+  position: relative;
+  flex: 1;
+  text-align: center;
+  height: 5.7rem;
+}
+.gnb li::before {
+  content: "";
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  left: 50%;
+  top: 0.8rem;
+  transform: translateX(-50%);
+}
+.gnb li:nth-child(1)::before {
+  background: url("/images/icon_home_24_off.svg") no-repeat center;
+}
+.gnb li:nth-child(2)::before {
+  background: url("/images/icon_search_24_off.svg") no-repeat center;
+}
+.gnb li:nth-child(3)::before {
+  background: url("/images/icon_qr_24_off.svg") no-repeat center;
+}
+.gnb li:nth-child(4)::before {
+  background: url("/images/icon_profile_24_off.svg") no-repeat center;
+}
+.gnb li:nth-child(5)::before {
+  background: url("/images/icon_profile_24_off.svg") no-repeat center;
+}
+.gnb li img {
+  padding-top: 0.8rem;
+}
+.gnb li a {
+  display: block;
+  width: 100%;
+  padding-top: 3.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #838A93;
 }
 
 /* layout / _align.scss */
