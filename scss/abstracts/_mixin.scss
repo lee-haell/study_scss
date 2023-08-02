@@ -25,3 +25,8 @@
     white-space: nowrap;
     clip: rect(0, 0, 0, 0);
 }
+
+/* bg */
+@mixin bg(){
+    background: url() no-repeat x y bgcolor / width height;
+}
