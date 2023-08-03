@@ -27,6 +27,7 @@
 }
 
 /* bg */
-@mixin bg(){
-    background: url() no-repeat x y bgcolor / width height;
+@mixin bg($imgfile, $x, $y, $bgcolor, $width, $height){ //배경 이미지를 불러오는데 필요한 모든 매개변수
+    background: url(#{$imgurl}#{$imgfile}) no-repeat $x $y $bgcolor; //#{$imgurl} -> 이미지 경로는 모두 같기 때문에 미리 정의한 변수 활용, $imgfile -> 각 이미지 파일 이름
+    background-size: $width $height; //위 코드에 '/ width height'로 한 줄에 들어갈 수 있지만, 슬래시가 오류나기 때문에 따로 빼줌
 }
