@@ -7,6 +7,7 @@
         height: rem(47);
         border-radius: rem(47);
         padding: rem(4);
+        margin: 0 rem(16);
         box-sizing: border-box;
         &--active {
             background-color: $white;
@@ -35,6 +36,54 @@
             line-height: rem(23);
             color: $gray55;
             background-color: transparent;
+        }
+    }
+    &-type2 {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        margin: rem(8) 0 rem(8) rem(16);
+        li {
+            border-radius: rem(35);
+            text-align: center;
+        }
+        a, button {
+            display: block;
+            min-width: rem(60);
+            box-sizing: border-box;
+            font-size: rem(15);
+            font-style: normal;
+            font-weight: 500;
+            line-height: rem(23);
+            color: $gray83;
+            padding: rem(6) rem(16);
+        }
+        &--active {
+            background-color: $point;
+            a, button {
+                color: $white;
+            }
+        }
+    }
+    &-type3 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); //2번 반복, n/1로 나뉨 의미
+        border-top: 1px solid $graye5;
+        border-bottom: 1px solid $graye5;
+        a, button {
+            display: block;
+            font-size: rem(13);
+            font-weight: 500;
+            line-height: rem(45);
+            color: $gray83;
+            text-indent: rem(24);
+        }
+        &--active {
+            a, button {
+                color: $black;
+                font-weight: 700;
+                text-decoration: underline;
+            }
         }
     }
 }

@@ -125,11 +125,18 @@ body {
   font-size: 1rem;
 }
 
-.title {
+.h1 {
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 2.9rem;
   color: #060606;
+}
+
+.h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.9rem;
+  color: #1E2530;
 }
 
 /* component / _button.scss */
@@ -239,6 +246,7 @@ body {
   height: 4.7rem;
   border-radius: 4.7rem;
   padding: 0.4rem;
+  margin: 0 1.6rem;
   box-sizing: border-box;
 }
 .tab-type1--active {
@@ -269,6 +277,52 @@ body {
   color: #555D67;
   background-color: transparent;
 }
+.tab-type2 {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  margin: 0.8rem 0 0.8rem 1.6rem;
+}
+.tab-type2 li {
+  border-radius: 3.5rem;
+  text-align: center;
+}
+.tab-type2 a, .tab-type2 button {
+  display: block;
+  min-width: 6rem;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.3rem;
+  color: #838A93;
+  padding: 0.6rem 1.6rem;
+}
+.tab-type2--active {
+  background-color: #BB6BD9;
+}
+.tab-type2--active a, .tab-type2--active button {
+  color: #fff;
+}
+.tab-type3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid #E5E8F0;
+  border-bottom: 1px solid #E5E8F0;
+}
+.tab-type3 a, .tab-type3 button {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 4.5rem;
+  color: #838A93;
+  text-indent: 2.4rem;
+}
+.tab-type3--active a, .tab-type3--active button {
+  color: #000;
+  font-weight: 700;
+  text-decoration: underline;
+}
 
 /* layout / _align.scss */
 /* 정렬 */
@@ -293,7 +347,7 @@ body {
   height: 4.8rem;
   position: relative;
 }
-.header-wrap .title {
+.header-wrap .h1 {
   position: absolute;
   left: 50%;
   top: 50%;

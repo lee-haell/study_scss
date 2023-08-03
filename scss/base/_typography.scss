@@ -7,9 +7,16 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
 html {font-size: 62.5%;} //백분율로 환산하면 10px과 같다. 접근성 때문에 62.5% 추천
 body {font-size: 1rem;}
 
-.title {
+.h1 {
     font-weight: 500;
     font-size: rem(18);
     line-height: rem(29);
     color: $black06; //색상 변수 설정 > _variables.scss
+}
+
+.h2 {
+    font-size: rem(18);
+    font-weight: 700;
+    line-height: rem(29);
+    color: $gray1e;
 }
