@@ -1,20 +1,21 @@
 /* component / _button.scss */
 .btn {
     &-prev {
+        //include는 최상단에 넣기
+        @include bg('icon_back_24.svg', center, rem(24), auto);
         width: rem(40); //40px = 4rem
         height: rem(40);
-        background: url('/images/icon_back_24.svg') no-repeat center / rem(24) auto; //절대경로, 24px rem으로 환산 -> 기준값 커지면 이미지도 같이 커진다.
     }
     &-menu {
+        @include bg('icon_menu_24.svg', center, rem(24), auto);
         width: rem(40);
         height: rem(40);
-        background: url('/images/icon_menu_24.svg') no-repeat center / rem(24) auto;
     }
     &-cart {
+        @include bg('icon_cart_24.svg', center, rem(24), auto);
         position: relative;
         width: rem(40);
         height: rem(40);
-        background: url('/images/icon_cart_24.svg') no-repeat center / rem(24) auto;
         span {
             @include position(right, 0.06px, top, 0.25px);
             background-color: $red;
@@ -22,7 +23,7 @@
             padding: 0 rem(6);
             height: rem(16);
             line-height: rem(16);
-            border-radius: rem(16); //height만큼 주기
+            border-radius: rem(16); //border-radius는 height만큼 주기
             font-size: rem(11);
             font-weight: 500;
         }

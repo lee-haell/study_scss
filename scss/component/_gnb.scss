@@ -20,9 +20,9 @@
     //hover하면 이미지와 폰트 색상 변경
     @for $i from 1 to 6 {
         .ico#{$i} {
-            background: url('/images/icon_gnb_off#{$i}.svg') no-repeat center rem(8);
+            @include bg('icon_gnb_off' + #{$i} + '.svg', center, rem(8)); //이미지 경로에서 보간이 들어가기 때문에 '' + '' 로 구분해주기
             &:hover {
-                background: url('/images/icon_gnb_on#{$i}.svg') no-repeat center rem(8);
+                @include bg('icon_gnb_on' + #{$i} + '.svg', center, rem(8));
                 a {
                     color: $black;
                 }

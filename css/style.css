@@ -1,9 +1,11 @@
 @charset "UTF-8";
 /* abstracts / _variables.scss */
 /* 색상 변수 */
+/* 이미지 경로 */
 /* abstracts / _function.scss */ /* abstracts / _mixin.scss */
 /* position */
 /* IR */
+/* bg */
 /* Reset */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 html, body, h1, h2, h3, h4, h5, h6, div, p, blockquote, pre, code, address, ul, ol, li, nav, section, article, header, footer, main, aside, dl, dt, dd, table, thead, tbody, tfoot, label, caption, th, td, form, fieldset, legend, hr, input, button, textarea, object, figure, figcaption {
@@ -132,20 +134,20 @@ body {
 
 /* component / _button.scss */
 .btn-prev {
+  background: url(../images/icon_back_24.svg) no-repeat center 2.4rem auto;
   width: 4rem;
   height: 4rem;
-  background: url("/images/icon_back_24.svg") no-repeat center/2.4rem auto;
 }
 .btn-menu {
+  background: url(../images/icon_menu_24.svg) no-repeat center 2.4rem auto;
   width: 4rem;
   height: 4rem;
-  background: url("/images/icon_menu_24.svg") no-repeat center/2.4rem auto;
 }
 .btn-cart {
+  background: url(../images/icon_cart_24.svg) no-repeat center 2.4rem auto;
   position: relative;
   width: 4rem;
   height: 4rem;
-  background: url("/images/icon_cart_24.svg") no-repeat center/2.4rem auto;
 }
 .btn-cart span {
   position: absolute;
@@ -181,49 +183,80 @@ body {
   color: #838A93;
 }
 .gnb .ico1 {
-  background: url("/images/icon_gnb_off1.svg") no-repeat center 0.8rem;
+  background: url(../images/icon_gnb_off1.svg) no-repeat center 0.8rem;
 }
 .gnb .ico1:hover {
-  background: url("/images/icon_gnb_on1.svg") no-repeat center 0.8rem;
+  background: url(../images/icon_gnb_on1.svg) no-repeat center 0.8rem;
 }
 .gnb .ico1:hover a {
   color: #000;
 }
 .gnb .ico2 {
-  background: url("/images/icon_gnb_off2.svg") no-repeat center 0.8rem;
+  background: url(../images/icon_gnb_off2.svg) no-repeat center 0.8rem;
 }
 .gnb .ico2:hover {
-  background: url("/images/icon_gnb_on2.svg") no-repeat center 0.8rem;
+  background: url(../images/icon_gnb_on2.svg) no-repeat center 0.8rem;
 }
 .gnb .ico2:hover a {
   color: #000;
 }
 .gnb .ico3 {
-  background: url("/images/icon_gnb_off3.svg") no-repeat center 0.8rem;
+  background: url(../images/icon_gnb_off3.svg) no-repeat center 0.8rem;
 }
 .gnb .ico3:hover {
-  background: url("/images/icon_gnb_on3.svg") no-repeat center 0.8rem;
+  background: url(../images/icon_gnb_on3.svg) no-repeat center 0.8rem;
 }
 .gnb .ico3:hover a {
   color: #000;
 }
 .gnb .ico4 {
-  background: url("/images/icon_gnb_off4.svg") no-repeat center 0.8rem;
+  background: url(../images/icon_gnb_off4.svg) no-repeat center 0.8rem;
 }
 .gnb .ico4:hover {
-  background: url("/images/icon_gnb_on4.svg") no-repeat center 0.8rem;
+  background: url(../images/icon_gnb_on4.svg) no-repeat center 0.8rem;
 }
 .gnb .ico4:hover a {
   color: #000;
 }
 .gnb .ico5 {
-  background: url("/images/icon_gnb_off5.svg") no-repeat center 0.8rem;
+  background: url(../images/icon_gnb_off5.svg) no-repeat center 0.8rem;
 }
 .gnb .ico5:hover {
-  background: url("/images/icon_gnb_on5.svg") no-repeat center 0.8rem;
+  background: url(../images/icon_gnb_on5.svg) no-repeat center 0.8rem;
 }
 .gnb .ico5:hover a {
   color: #000;
+}
+
+/* component / _tab.scss */
+.tab-type1 {
+  display: flex;
+  align-items: center;
+  background-color: #E5E8F0;
+  height: 4.7rem;
+  border-radius: 4.7rem;
+  padding: 0.4rem;
+  box-sizing: border-box;
+}
+.tab-type1 li {
+  flex: 1;
+  text-align: center;
+  border-radius: 4.7rem;
+}
+.tab-type1 a, .tab-type1 button {
+  width: 100%;
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+  color: #555D67;
+  background-color: transparent;
+}
+.tab-type1--active {
+  background-color: #fff;
+  height: 3.9rem;
+  line-height: 3.9rem;
+}
+.tab-type1--active a, .tab-type1--active button {
+  color: #060606;
 }
 
 /* layout / _align.scss */
