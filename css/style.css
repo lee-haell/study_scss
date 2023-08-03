@@ -134,17 +134,20 @@ body {
 
 /* component / _button.scss */
 .btn-prev {
-  background: url(../images/icon_back_24.svg) no-repeat center 2.4rem auto;
+  background: url(../images/icon_back_24.svg) no-repeat center;
+  background-size: 2.4rem auto;
   width: 4rem;
   height: 4rem;
 }
 .btn-menu {
-  background: url(../images/icon_menu_24.svg) no-repeat center 2.4rem auto;
+  background: url(../images/icon_menu_24.svg) no-repeat center;
+  background-size: 2.4rem auto;
   width: 4rem;
   height: 4rem;
 }
 .btn-cart {
-  background: url(../images/icon_cart_24.svg) no-repeat center 2.4rem auto;
+  background: url(../images/icon_cart_24.svg) no-repeat center;
+  background-size: 2.4rem auto;
   position: relative;
   width: 4rem;
   height: 4rem;
@@ -238,6 +241,22 @@ body {
   padding: 0.4rem;
   box-sizing: border-box;
 }
+.tab-type1--active {
+  background-color: #fff;
+  height: 3.9rem;
+  line-height: 3.9rem;
+}
+.tab-type1--active a, .tab-type1--active button {
+  color: #060606;
+}
+.tab-type1--active {
+  background-color: #fff;
+  height: 3.9rem;
+  line-height: 3.9rem;
+}
+.tab-type1--active a, .tab-type1--active button {
+  color: #060606;
+}
 .tab-type1 li {
   flex: 1;
   text-align: center;
@@ -249,14 +268,6 @@ body {
   line-height: 2.3rem;
   color: #555D67;
   background-color: transparent;
-}
-.tab-type1--active {
-  background-color: #fff;
-  height: 3.9rem;
-  line-height: 3.9rem;
-}
-.tab-type1--active a, .tab-type1--active button {
-  color: #060606;
 }
 
 /* layout / _align.scss */

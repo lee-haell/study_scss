@@ -2,17 +2,17 @@
 .btn {
     &-prev {
         //include는 최상단에 넣기
-        @include bg('icon_back_24.svg', center, rem(24), auto);
+        @include bg('icon_back_24.svg',center,null,null,rem(24),auto);
         width: rem(40); //40px = 4rem
         height: rem(40);
     }
     &-menu {
-        @include bg('icon_menu_24.svg', center, rem(24), auto);
+        @include bg('icon_menu_24.svg',center,null,null,rem(24),auto);
         width: rem(40);
         height: rem(40);
     }
     &-cart {
-        @include bg('icon_cart_24.svg', center, rem(24), auto);
+        @include bg('icon_cart_24.svg',center,null,null,rem(24),auto);
         position: relative;
         width: rem(40);
         height: rem(40);
