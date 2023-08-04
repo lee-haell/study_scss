@@ -138,6 +138,25 @@ body {
   line-height: 2.9rem;
   color: #1E2530;
 }
+.h2-2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.9rem;
+  color: #1E2530;
+}
+.h2-3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.3rem;
+  color: #1E2530;
+}
+
+.h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.3rem;
+  color: #555D67;
+}
 
 /* component / _button.scss */
 .btn-prev {
